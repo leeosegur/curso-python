@@ -1,37 +1,32 @@
 #!python3.12.1
 """
-Hello World Multi Linguas.
+IMPRIME A TUBUADA DO 1 AO 10.
 
-Dependendo da lingua configurada no ambiente o programa exibe a mensagem 
-correspondente.
+USAGE:
 
-Usage:
-
-Tenha a variavel langue devidamente configurada ex:
-
-    export LANG=pt_br
-
-Execução:
-
-    python hello.py
-    ou
-    ./hello.py
+TABUADA DO 1
+1
+2
+3
+.............
+TABUADA DO 2
+2
+4
+6
 
 """
 __version__ = "0.0.1"
 __author__ = "Leonardo Segur"
 __license__ = "Unlicense"
-#Dunder = __ (2 Underlines)
 
-import os
+# numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+numeros = list(range(1, 11))
 
-current_language = os.getenv("LANG", "pt_BR")[:5]
+# Iterable (percorriveis)
 
-msg = "Hello, World!"
-
-if current_language == "pt_BR":
-    msg = "Olá, Mundo!"
-elif current_language == "it_IT":
-    msg = "Ciao, Mondo!"
-
-print(msg)
+# para cada numero em numeros:
+for numero in numeros:
+    print("Tabuada do:", numero)
+    for outro_numero in numeros:
+        print(numero * outro_numero)
+    print(">>>>>>>>>>>>>><<<<<<<<<<<<<<")
