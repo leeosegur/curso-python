@@ -25,6 +25,14 @@ __license__ = "Unlicense"
 
 import os
 
+import sys
+
+
+arguments = {}
+
+for arg in sys.argv[1:]:
+    print(f"{argv=}")
+
 #current_language = os.getenv("LANG", "it_IT")[:5]
 current_language = "it_IT"
 
