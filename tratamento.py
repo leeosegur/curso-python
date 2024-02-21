@@ -39,6 +39,11 @@ except FileNotFoundError: # Bare except
 except AttributeError:
     print("[ERROR:]AttributeError in file.")
     sys.exit(1)
+else:
+    print("Sucesso!!!")
+finally:
+    print("Execute isso sempre!")
+
 #except (FileNotFoundError, AttributeError) as e:
 #   print(f"{str(e)}.")
 #   sys.exit(1)
